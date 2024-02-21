@@ -19,8 +19,10 @@ const DAILY_MESSAGES = [
   },
 ];
 
-const todaysDate = new Date().getDay();
-const messages = DAILY_MESSAGES[todaysDate - 1].messages;
-const todaysMessage = messages[Math.floor(Math.random() * messages.length)];
+const getRandomMessage = () => {
+  const todaysDate = new Date().getDay();
+  const messages = DAILY_MESSAGES[todaysDate - 1].messages;
+  return messages[Math.floor(Math.random() * messages.length)];
+};
 
-module.exports = DAILY_MESSAGES;
+module.exports = getRandomMessage;

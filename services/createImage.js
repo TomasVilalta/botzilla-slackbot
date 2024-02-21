@@ -1,7 +1,7 @@
 const { createCanvas, loadImage } = require("canvas");
 const fs = require("fs");
-const { formatTitle } = require("./format-title");
-const downloadUrl = require("./download-url");
+const { formatTitle } = require("../utils/format-title");
+const downloadUrl = require("../utils/imageUrlDownloader");
 const IMAGES = require("../constants/images");
 
 const createImage = async ({ phrase, baseImage }) => {
