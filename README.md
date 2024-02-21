@@ -6,7 +6,7 @@ For now it can only greet you with some inspirational quotes, but it will soon b
 ## Features
 
 - [x] Greet you with an inspirational quote of the day
-- [ ] Post the quote with an image of godzilla himself
+- [x] Post the quote with an image of godzilla himself
 - [ ] Tell you a joke
 - [ ] Tell you a fun fact
 - [ ] Tell you a random quote
@@ -37,3 +37,5 @@ npm index.js
 ## How to contribute
 
 If you want to contribute to Botzilla, you can fork the repository and submit a pull request.
+
+---

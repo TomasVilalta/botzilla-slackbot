@@ -8,7 +8,7 @@ const downloadUrl = async ({ url }) => {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
       // Image will be stored at this path
-      const path = `./baseImage.jpg`;
+      const path = `./temp/baseImage.jpg`;
       const filePath = fs.createWriteStream(path);
 
       pipeline(res, filePath)
@@ -24,6 +24,6 @@ const downloadUrl = async ({ url }) => {
   });
 };
 
-// downloadUrl({ url: IMAGES[0] });
+downloadUrl({ url: IMAGES[2] });
 
 module.exports = downloadUrl;

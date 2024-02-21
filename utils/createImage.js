@@ -5,7 +5,6 @@ const downloadUrl = require("./download-url");
 const IMAGES = require("../constants/images");
 
 const createImage = async ({ phrase, baseImage }) => {
-  const { createCanvas } = require("canvas");
   const fs = require("fs");
   await downloadUrl({ url: baseImage });
 
@@ -36,7 +35,7 @@ const createImage = async ({ phrase, baseImage }) => {
   context.fillStyle = "#0b0b0b";
   context.fillRect(0, 0, width, height);
 
-  const image = await loadImage("./baseImage.jpg");
+  const image = await loadImage("./temp/baseImage.jpg");
   const { w, h, x, y } = imagePosition;
   context.drawImage(image, x, y, w, h);
 
@@ -53,9 +52,9 @@ const createImage = async ({ phrase, baseImage }) => {
   if (text[1]) context.fillText(text[1], 600, titleY + lineHeight);
 
   const buffer = canvas.toBuffer("image/jpeg"); // Its jpeg or png, so jpeg it is
-  fs.writeFileSync("./masterPiece.jpg", buffer);
+  fs.writeFileSync("./temp/masterPiece.jpg", buffer);
 
-  return "./masterPiece.jpg";
+  return "./temp/masterPiece.jpg";
 };
 
 //test
