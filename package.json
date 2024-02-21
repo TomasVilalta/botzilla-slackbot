@@ -1,0 +1,17 @@
+{
+  "name": "botzilla",
+  "version": "1.0.0",
+  "description": "Your friendly neighbourhood gargantuan lizard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TomasVilalta",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.17.1",
+    "canvas": "^2.11.2",
+    "node-downloader-helper": "^2.1.9",
+    "serpapi": "^2.0.0"
+  }
+}
