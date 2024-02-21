@@ -5,13 +5,13 @@ For now it can only greet you with some inspirational quotes, but it will soon b
 
 ## Features
 
-- [✅] Greet you with an inspirational quote of the day
+- [x] Greet you with an inspirational quote of the day
 - [ ] Post the quote with an image of godzilla himself
 - [ ] Tell you a joke
 - [ ] Tell you a fun fact
 - [ ] Tell you a random quote
 - [ ] Chat with you with the help of a chatbot API
-- [✅] Being your friend
+- [x] Being your friend
 
 ## How to use
 
